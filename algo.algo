@@ -1,0 +1,16 @@
+ALGORITHM algorithm_name
+VAR T1 :tab
+T2 : tab
+    set_declarations
+BEGIN
+sum:=0
+    FOR i FROM 0 TO T1.length  STEP step  DO
+       FOR j FROM 0 TO T2.length STEP step  DO
+  IF (T1[i]=T2[j]) THEN
+    sum:= sum + T1[i]
+    sum:=sum*2
+  END_IF
+       END_FOR 
+    END_FOR
+writeln ("voici la somme ",sum)
+END
